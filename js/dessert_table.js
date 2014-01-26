@@ -7,8 +7,7 @@ var sendInputMessage = function(event, template){
   data = {
     text: input.value,
     created_at: Date.now(),
-    users: users,
-    writer: Meteor.userId()
+    users: users
   }
 
   Message.insert(data)
