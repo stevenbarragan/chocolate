@@ -1,0 +1,19 @@
+<template name="dessert_table">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="well">
+        {{#each messages}}
+          {{> message }}
+        {{/each}}
+      </div>
+      <div class="input-group">
+        <input type="text" class="form-control text">
+        <span class="input-group-btn">
+          <button class="btn btn-default add" type="button">Go!</button>
+        </span>
+      </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</template>
