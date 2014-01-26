@@ -5,6 +5,8 @@
 
 standard-app-packages
 autopublish
-insecure
 preserve-inputs
 bootstrap-3
+accounts-password
+accounts-ui
+accounts-facebook
