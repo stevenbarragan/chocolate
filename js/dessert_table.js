@@ -1,8 +1,9 @@
 var sendInputMessage = function(event, template){
   input = template.find('input.text')
 
-  users = Session.get('users')
+  users = []
   users.push(Meteor.userId())
+  users = users.concat(Session.get('users'))
 
   data = {
     text: input.value,
