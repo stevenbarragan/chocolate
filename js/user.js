@@ -11,4 +11,12 @@ if(Meteor.isClient){
       return 'active'
     }
   }
+
+  Template.user.nickname = function(){
+    if(this.services.facebook != undefined){
+      console.log(this)
+      return this.services.facebook.name
+    }
+    return this.emails[0].address
+  }
 }

@@ -1,8 +1,6 @@
 <template name="user">
   <a class="list-group-item {{ active }}" href="#">
-    {{#each emails }}
-      {{ address }}
-    {{/each}}
+    {{ nickname }}
     <div class='pull-right log-status {{ status }}'></div>
   </a>
 </template>
