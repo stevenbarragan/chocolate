@@ -8,6 +8,6 @@ autopublish
 preserve-inputs
 bootstrap-3
 accounts-password
-accounts-ui
 accounts-facebook
 stylus
+accounts-ui-bootstrap-3

@@ -1,12 +1,15 @@
 <template name="menu">
-  <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Chocolate</a>
+      <a class="navbar-brand" href="#">Project name</a>
     </div>
     <div class="navbar-collapse collapse">
-      <div class="nav navbar-nav navbar-right">
-        {{ loginButtons align="right"}}
-      <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        {{ loginButtons }}
+      </ul>
     </div>
-  </nav>
+  </div>
 </template>

@@ -14,9 +14,10 @@ if(Meteor.isClient){
 
   Template.user.nickname = function(){
     if(this.services.facebook != undefined){
-      console.log(this)
       return this.services.facebook.name
     }
-    return this.emails[0].address
+    if(this.emails.length > 0){
+      return this.emails[0].address
+    }
   }
 }
